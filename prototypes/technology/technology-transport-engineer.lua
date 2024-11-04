@@ -82,6 +82,10 @@ data:extend(
                 {
                     type = "unlock-recipe",
                     recipe = "pipe-to-ground-mk2"
+                },
+                {
+                    type = "unlock-recipe",
+                    recipe = "storage-tank-mk2"
                 }
             },
             unit = {
