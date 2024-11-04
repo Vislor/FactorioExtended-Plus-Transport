@@ -1,6 +1,8 @@
 require("prototypes.entity.__init__")
 require("prototypes.item.items")
+require("prototypes.item.offshore-pump")
 require("prototypes.item.item-trains")
+require("prototypes.recipe.recipe-offshore-pump")
 require("prototypes.recipe.recipe-trains")
 require("prototypes.recipe.recipe-pipes")
 require("prototypes.technology.technology-transport-engineer")

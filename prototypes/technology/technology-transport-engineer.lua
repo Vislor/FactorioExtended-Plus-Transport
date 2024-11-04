@@ -90,6 +90,10 @@ data:extend(
                 {
                     type = "unlock-recipe",
                     recipe = "pump-mk2"
+                },
+                {
+                    type = "unlock-recipe",
+                    recipe = "offshore-pump-mk2"
                 }
             },
             unit = {

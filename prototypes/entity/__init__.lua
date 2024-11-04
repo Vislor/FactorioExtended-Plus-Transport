@@ -28,6 +28,7 @@ require("cargo-wagon")
 require("fluid-wagon")
 require("locomotive")
 
+require("offshore-pump")
 require("pump")
 require("pipe")
 require("pipe-to-ground")
