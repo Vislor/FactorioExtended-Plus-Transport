@@ -27,3 +27,6 @@ data:extend(
 require("cargo-wagon")
 require("fluid-wagon")
 require("locomotive")
+
+require("pipe")
+require("pipe-to-ground")

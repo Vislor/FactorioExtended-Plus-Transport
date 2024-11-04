@@ -16,7 +16,10 @@ local items = {
     {source = "locomotive", name = "locomotive-mk2", subgroup = "fb-vehicle", order = "i-a", icon_name = "locomotive-mk2.png", itype = "item-with-entity-data", tint = Constant.green_tint},
     {source = "locomotive", name = "locomotive-mk3", subgroup = "fb-vehicle", order = "i-b", icon_name = "locomotive-mk3.png", itype = "item-with-entity-data", tint = Constant.blue_tint},
     {source = "fluid-wagon", name = "fluid-wagon-mk2", subgroup = "fb-vehicle", order = "h[fluid-wagon-mk2]-c", icon_name = "fluid-wagon-mk2.png", itype = "item-with-entity-data", tint = Constant.green_tint },
-    {source = "fluid-wagon", name = "fluid-wagon-mk3", subgroup = "fb-vehicle", order = "h[fluid-wagon-mk3]-d", icon_name = "fluid-wagon-mk3.png", itype = "item-with-entity-data", tint = Constant.blue_tint }
+    {source = "fluid-wagon", name = "fluid-wagon-mk3", subgroup = "fb-vehicle", order = "h[fluid-wagon-mk3]-d", icon_name = "fluid-wagon-mk3.png", itype = "item-with-entity-data", tint = Constant.blue_tint },
+    --
+    {source = "pipe", name = "pipe-mk2", subgroup = "fb-fluids", order = "a-a", icon_name = "pipe-mk2.png", itype = "item"},
+    {source = "pipe-to-ground", name = "pipe-to-ground-mk2", subgroup = "fb-fluids", order = "a-c", icon_name = "pipe-to-ground-mk2.png", itype = "item"}
 }
 
 for _, item in pairs(items) do

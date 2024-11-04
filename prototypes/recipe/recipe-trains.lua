@@ -34,7 +34,7 @@ data:extend(
             ingredients = {
                 { type = "item", name = "fluid-wagon", amount = 3 },
                 { type = "item", name = "steel-plate", amount = 32 },
-                { type = "item", name = "pipe", amount = 8 }
+                { type = "item", name = "pipe-mk2", amount = 8 }
             },
             results = {{ type="item", name = "fluid-wagon-mk2", amount = 1 }}
         },
@@ -45,7 +45,7 @@ data:extend(
             enabled = false,
             ingredients = {
                 { type = "item", name = "fluid-wagon-mk2", amount = 3 },
-                { type = "item", name = "pipe", amount = 16 },
+                { type = "item", name = "pipe-mk2", amount = 16 },
                 { type = "item", name = "titanium-alloy", amount = 32 }
             },
             results = {{ type = "item", name = "fluid-wagon-mk3", amount = 1 }}

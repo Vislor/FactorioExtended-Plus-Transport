@@ -67,6 +67,33 @@ data:extend(
                 time = 30
             },
             order = "c-g-c"
-        }
+        },
+        {
+            type = "technology",
+            name = "factorio-extended-fluid-handling",
+            icon = "__base__/graphics/technology/fluid-handling.png",
+            icon_size = 256,
+            prerequisites = {"fluid-handling", "titanium-processing"},
+            effects = {
+                {
+                    type = "unlock-recipe",
+                    recipe = "pipe-mk2"
+                },
+                {
+                    type = "unlock-recipe",
+                    recipe = "pipe-to-ground-mk2"
+                }
+            },
+            unit = {
+                count = 200,
+                ingredients = {
+                    {"automation-science-pack", 1},
+                    {"logistic-science-pack", 1},
+                    {"chemical-science-pack", 1}
+                },
+                time = 30
+            },
+            order = "d-a-b"
+        },
     }
 )
