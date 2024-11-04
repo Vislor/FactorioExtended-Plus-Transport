@@ -10,7 +10,7 @@ local Constant = require("constant")
 --
 local mk2 = table.deepcopy(data.raw["cargo-wagon"]["cargo-wagon"])
 mk2.name = "cargo-wagon-mk2"
-mk2.minable.result = mk2.name
+mk2.minable = { mining_time = 0.5, result = mk2.name }
 mk2.max_health = 1200
 mk2.inventory_size = 60
 mk2.max_speed = 1.9
@@ -18,23 +18,16 @@ mk2.friction_force = 0.25
 mk2.air_resistance = 0.005
 mk2.color = Constant.green_tint
 mk2.equipment_grid = "car-medium-equipment-grid"
-
-mk2.pictures.layers[1].tint = mk2.color
-mk2.pictures.layers[1].hr_version.tint = mk2.color
-mk2.pictures.layers[2].apply_runtime_tint = false
-mk2.pictures.layers[2].hr_version.apply_runtime_tint = false
-mk2.horizontal_doors.layers[3].apply_runtime_tint = false
-mk2.horizontal_doors.layers[3].hr_version.apply_runtime_tint = false
-mk2.horizontal_doors.layers[5].apply_runtime_tint = false
-mk2.horizontal_doors.layers[5].hr_version.apply_runtime_tint = false
-mk2.vertical_doors.layers[3].apply_runtime_tint = false
-mk2.vertical_doors.layers[3].hr_version.apply_runtime_tint = false
-mk2.vertical_doors.layers[5].apply_runtime_tint = false
-mk2.vertical_doors.layers[5].hr_version.apply_runtime_tint = false
+mk2.pictures.rotated.layers[1].tint = mk2.color
+mk2.pictures.rotated.layers[2].apply_runtime_tint = false
+mk2.pictures.sloped.layers[1].tint = mk2.color
+mk2.pictures.sloped.layers[2].apply_runtime_tint = false
+mk2.horizontal_doors.layers[2].apply_runtime_tint = false
+mk2.vertical_doors.layers[2].apply_runtime_tint = false
 
 local mk3 = table.deepcopy(data.raw["cargo-wagon"]["cargo-wagon"])
 mk3.name = "cargo-wagon-mk3"
-mk3.minable.result = mk3.name
+mk3.minable = { mining_time = 0.5, result = mk3.name }
 mk3.max_health = 1800
 mk3.inventory_size = 100
 mk3.max_speed = 2.3
@@ -42,18 +35,11 @@ mk3.friction_force = 0.01
 mk3.air_resistance = 0.0001
 mk3.color = Constant.blue_tint
 mk3.equipment_grid = "car-large-equipment-grid"
-
-mk3.pictures.layers[1].tint = mk3.color
-mk3.pictures.layers[1].hr_version.tint = mk3.color
-mk3.pictures.layers[2].apply_runtime_tint = false
-mk3.pictures.layers[2].hr_version.apply_runtime_tint = false
-mk3.horizontal_doors.layers[3].apply_runtime_tint = false
-mk3.horizontal_doors.layers[3].hr_version.apply_runtime_tint = false
-mk3.horizontal_doors.layers[5].apply_runtime_tint = false
-mk3.horizontal_doors.layers[5].hr_version.apply_runtime_tint = false
-mk3.vertical_doors.layers[3].apply_runtime_tint = false
-mk3.vertical_doors.layers[3].hr_version.apply_runtime_tint = false
-mk3.vertical_doors.layers[5].apply_runtime_tint = false
-mk3.vertical_doors.layers[5].hr_version.apply_runtime_tint = false
+mk3.pictures.rotated.layers[1].tint = mk3.color
+mk3.pictures.rotated.layers[2].apply_runtime_tint = false
+mk3.pictures.sloped.layers[1].tint = mk3.color
+mk3.pictures.sloped.layers[2].apply_runtime_tint = false
+mk3.horizontal_doors.layers[2].apply_runtime_tint = false
+mk3.vertical_doors.layers[2].apply_runtime_tint = false
 
 data:extend({mk2, mk3})
