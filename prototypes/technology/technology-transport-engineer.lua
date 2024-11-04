@@ -86,6 +86,10 @@ data:extend(
                 {
                     type = "unlock-recipe",
                     recipe = "storage-tank-mk2"
+                },
+                {
+                    type = "unlock-recipe",
+                    recipe = "pump-mk2"
                 }
             },
             unit = {

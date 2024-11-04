@@ -32,6 +32,21 @@ data:extend(
             {type = "item", name = "titanium-alloy", amount = 15}
           },
           results = {{type = "item", name = "storage-tank-mk2", amount = 1}}
+        },
+        {
+          type = "recipe",
+          name = "pump-mk2",
+          energy_required = 2,
+          enabled = false,
+          ingredients =
+          {
+            {type = "item", name = "pump", amount = 4},
+            {type = "item", name = "advanced-circuit", amount = 4},
+            {type = "item", name = "titanium-alloy", amount = 5},
+            {type = "item", name = "pipe-mk2", amount = 4},
+            {type = "item", name = "pollution-filter", amount = 1}
+          },
+          results = {{type = "item", name = "pump-mk2", amount = 1}}
         }
     }
 )
