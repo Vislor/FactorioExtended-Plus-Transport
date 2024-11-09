@@ -21,7 +21,12 @@ local items = {
     {source = "pipe", name = "pipe-mk2", subgroup = "fb-fluids", order = "a-a", icon_name = "pipe-mk2.png", itype = "item"},
     {source = "pipe-to-ground", name = "pipe-to-ground-mk2", subgroup = "fb-fluids", order = "a-c", icon_name = "pipe-to-ground-mk2.png", itype = "item"},
     {source = "storage-tank", name = "storage-tank-mk2", subgroup = "fb-fluids", order = "b-a", icon_name = "storage-tank-mk2.png", itype = "item"},
-    {source = "pump", name = "pump-mk2", subgroup = "fb-fluids", order = "b-b", icon_name = "pump-mk2.png", itype = "item"}
+    {source = "pump", name = "pump-mk2", subgroup = "fb-fluids", order = "b-b", icon_name = "pump-mk2.png", itype = "item"},
+    --
+    {source = "car", name = "car-mk2", subgroup = "fb-vehicle", order = "a[vehicle]-a2", icon_name = "car-mk2.png", itype = "item-with-entity-data"},
+    {source = "car", name = "car-mk3", subgroup = "fb-vehicle", order = "a[vehicle]-a3", icon_name = "car-mk3.png", itype = "item-with-entity-data"},
+    {source = "tank", name = "tank-mk2", subgroup = "fb-vehicle", order = "a[vehicle]-b2", icon_name = "tank-mk2.png", itype = "item-with-entity-data"},
+    {source = "tank", name = "tank-mk3", subgroup = "fb-vehicle", order = "a[vehicle]-b3", icon_name = "tank-mk3.png", itype = "item-with-entity-data"}
 }
 
 for _, item in pairs(items) do

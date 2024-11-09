@@ -107,5 +107,97 @@ data:extend(
             },
             order = "d-a-b"
         },
+        {
+            type = "technology",
+            name = "automobilism-2",
+            icons = {{icon_size = 256, tint = green_tint, icon = "__base__/graphics/technology/automobilism.png"}},
+            prerequisites = {"automobilism", "titanium-processing"},
+            effects = {
+                {
+                    type = "unlock-recipe",
+                    recipe = "car-mk2"
+                }
+            },
+            unit = {
+                count = 200,
+                ingredients = {
+                    {"automation-science-pack", 1},
+                    {"logistic-science-pack", 1},
+                    {"chemical-science-pack", 1}
+                },
+                time = 30
+            },
+            order = "e-b-2"
+        },
+        {
+            type = "technology",
+            name = "automobilism-3",
+            icons = {{icon_size = 256, tint = blue_tint, icon = "__base__/graphics/technology/automobilism.png"}},
+            prerequisites = {"automobilism-2", "titanium-processing", "processing-unit"},
+            effects = {
+                {
+                    type = "unlock-recipe",
+                    recipe = "car-mk3"
+                }
+            },
+            unit = {
+                count = 400,
+                ingredients = {
+                    {"automation-science-pack", 1},
+                    {"logistic-science-pack", 1},
+                    {"chemical-science-pack", 1}
+                },
+                time = 30
+            },
+            order = "e-b-3"
+        },
+        {
+            type = "technology",
+            name = "tanks-2",
+            localised_name = {"technology-name.tanks-2"},
+            icons = {{icon_size = 256, tint = green_tint, icon = "__base__/graphics/technology/tank.png"}},
+            prerequisites = {"tank", "titanium-processing"},
+            effects = {
+                {
+                    type = "unlock-recipe",
+                    recipe = "tank-mk2"
+                }
+            },
+            unit = {
+                count = 500,
+                ingredients = {
+                    {"automation-science-pack", 1},
+                    {"logistic-science-pack", 1},
+                    {"military-science-pack", 1},
+                    {"chemical-science-pack", 1}
+                },
+                time = 30
+            },
+            order = "e-c-c-2"
+        },
+        {
+            type = "technology",
+            name = "tanks-3",
+            localised_name = {"technology-name.tanks-3"},
+            icons = {{icon_size = 256, tint = blue_tint, icon = "__base__/graphics/technology/tank.png"}},
+            prerequisites = {"tanks-2", "titanium-processing", "processing-unit"},
+            effects = {
+                {
+                    type = "unlock-recipe",
+                    recipe = "tank-mk3"
+                }
+            },
+            unit = {
+                count = 750,
+                ingredients = {
+                    {"automation-science-pack", 1},
+                    {"logistic-science-pack", 1},
+                    {"military-science-pack", 1},
+                    {"chemical-science-pack", 1}
+                },
+                time = 30
+            },
+            order = "e-c-c-3"
+        }
     }
 )

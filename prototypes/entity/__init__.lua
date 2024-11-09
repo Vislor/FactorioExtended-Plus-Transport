@@ -33,3 +33,6 @@ require("pump")
 require("pipe")
 require("pipe-to-ground")
 require("storage-tank")
+
+require("car")
+require("tank")
