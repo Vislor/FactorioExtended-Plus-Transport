@@ -35,6 +35,17 @@ data:extend(
     }
 )
 
+local gunmk2 = table.deepcopy(data.raw["gun"]["vehicle-machine-gun"])
+gunmk2.name = "vehicle-machine-gun-mk2"
+gunmk2.order = "c[vehicle-machine-gun]"
+gunmk2.attack_parameters.damage_modifier = 1.5
+
+local gunmk3 = table.deepcopy(data.raw["gun"]["vehicle-machine-gun"])
+gunmk3.name = "vehicle-machine-gun-mk3"
+gunmk3.order = "d[vehicle-machine-gun]"
+gunmk3.attack_parameters.damage_modifier = 2.0
+
+data.extend({gunmk2, gunmk3})
 data.raw["car"]["car"].equipment_grid = "car-small-equipment-grid"
 
 local mk2 = table.deepcopy(data.raw["car"]["car"])
@@ -46,7 +57,7 @@ mk2.inventory_size = 100
 mk2.max_health = 600
 mk2.energy_per_hit_point = 0.9
 mk2.minable.result = mk2.name
-mk2.guns = {"vehicle-machine-gun", "vehicle-rocket-launcher"}
+mk2.guns = {"vehicle-machine-gun-mk2", "vehicle-rocket-launcher"}
 mk2.animation.tint = Constant.green_tint
 mk2.animation.layers[1].tint = Constant.green_tint
 
@@ -59,7 +70,7 @@ mk3.inventory_size = 120
 mk3.max_health = 750
 mk3.energy_per_hit_point = 0.8
 mk3.minable.result = mk3.name
-mk3.guns = {"vehicle-machine-gun", "vehicle-rocket-launcher"}
+mk3.guns = {"vehicle-machine-gun-mk3", "vehicle-rocket-launcher"}
 mk3.animation.tint = Constant.blue_tint
 mk3.animation.layers[1].tint = Constant.blue_tint
 
